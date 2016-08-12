@@ -1,0 +1,11 @@
+{
+  "productName": "admin_merchant",
+  "productURL": "/Users/lotuslwb/Documents/work/merchantcenter/",
+  "boardUserName": "appsvr",
+  "boardIP": "163.53.88.83",
+  "boardURL": "/home/appsvr/",
+  "boardPort": "443",
+  "targetName": "appsvr",
+  "targetIP": "172.16.0.12",
+  "targetURL": "/home/appsvr/nginx/html/merchantcenter/"
+}
