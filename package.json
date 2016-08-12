@@ -8,18 +8,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Lotuslwb/Besieged.git"
+    "url": "git+https://github.com/Lotuslwb/Wisteria.git"
   },
   "keywords": [
-    "",
-    "检测"
+    "自动发布"
   ],
   "author": "lotuslwb",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Lotuslwb/Besieged/issues"
+    "url": "https://github.com/Lotuslwb/Wisteria/issues"
   },
-  "homepage": "https://github.com/Lotuslwb/Besieged#readme",
+  "homepage": "https://github.com/Lotuslwb/Wisteria#readme",
   "bin": {
     "wis": "bin/wis.js"
   },
