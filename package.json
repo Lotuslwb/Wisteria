@@ -11,7 +11,7 @@
     "url": "git+https://github.com/Lotuslwb/Besieged.git"
   },
   "keywords": [
-    "前端性能",
+    "",
     "检测"
   ],
   "author": "lotuslwb",
@@ -30,10 +30,9 @@
     "lodash": "^4.13.1",
     "log-symbols": "^1.0.2",
     "path": "^0.12.7",
-    "phantomjs": "1.9.19"
-  },
-  "devDependencies": {
+    "phantomjs": "1.9.19",
     "archiver": "^1.0.1",
+    "inquirer": "^1.1.2",
     "ssh2": "^0.5.0"
   }
 }

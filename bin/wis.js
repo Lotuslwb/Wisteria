@@ -10,18 +10,31 @@ program
     .version(packageInfo.version)
     .option('-l, --list', '查看支持的checklist')
 
-program.command('pack <url>')
+program.command('pack <productName> <password>')
     .description('打包一下')
-    .action(function (url, options) {
-        require('../utils/pack')(url);
+    .action(function (productName, password, options) {
+        require('../utils/pack')(productName, password);
     });
 
 
-program.command('ssh2 <url>')
-    .description('上传到跳板机')
-    .action(function (url, options) {
-        require('../utils/ssh2')(url);
+program.command('init')
+    .description('初始化config')
+    .action(function (options) {
+        require('../utils/initConfig')();
     });
+
+program.command('ls')
+    .description('查看已有项目')
+    .action(function (options) {
+        require('../utils/configlist')();
+    });
+
+program.command('remove <productName>')
+    .description('删除已有项目  <productName> ')
+    .action(function (productName, options) {
+        require('../utils/removeConfig')(productName);
+    });
+
 
 program.parse(process.argv);
 
