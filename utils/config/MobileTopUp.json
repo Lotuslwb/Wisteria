@@ -1,0 +1,11 @@
+{
+  "productName": "MobileTopUp",
+  "productURL": "/Users/lotuslwb/Documents/work/MobileTopUp/vue-multi-page-master/",
+  "boardUserName": "appsvr",
+  "boardIP": "163.53.88.171",
+  "boardURL": "/home/appsvr/",
+  "boardPort": "22",
+  "targetName": "appsvr",
+  "targetIP": "172.16.10.3",
+  "targetURL": "/home/appsvr/"
+}
