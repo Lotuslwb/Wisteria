@@ -17,7 +17,8 @@ obj.prototype = {
 
         fs.exists(configURL, function (exists) {
             if (exists) {
-                //配置文件存在
+                //
+                log.ok('检测配置文件存在');
                 me.package(me);
             } else {
                 log.error('配置文件不存在,wis -help可以参看帮助');
@@ -29,6 +30,8 @@ obj.prototype = {
         var config = fs.readFileSync(me.configURL, 'utf-8');
 
         config = JSON.parse(config);
+
+        var initSH = require('../utils/initSH')(config.productName);
 
         var outputURL = config.productURL + config.productName + '.zip';
 
@@ -44,18 +47,18 @@ obj.prototype = {
             log.ok('压缩成功');
             require('../utils/ssh2')(config, me.pw);
         });
-
         archive.pipe(output);
         archive.bulk([
             {
                 expand: true,
                 //路径
-                cwd: '/Users/lotuslwb/Documents/work/merchantcenter/',
+                cwd: config.productURL,
                 //路径下面匹配哪些文件需要压缩
-                src: ['admin_merchant/**'],
+                src: [config.productName + '/**'],
             }
         ]);
         archive.finalize();
+
     }
 }
 

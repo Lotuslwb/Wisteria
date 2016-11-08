@@ -1,6 +1,6 @@
 {
   "name": "wb-Wisteria",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "饭票自动部署工具 前端nodejs版本",
   "main": "main.js",
   "scripts": {

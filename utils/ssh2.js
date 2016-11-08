@@ -23,7 +23,7 @@ function connectToServer(config, pw) {
         var conn = new Client();
         conn.on('ready', function () {
 
-            conn.exec('bash admin_merchant.sh', function (err, stream) {
+            conn.exec('bash ' + config.productName + '.sh', function (err, stream) {
                 stream.on('data', function (data, stderr) {
                     //打印 过程数据
                     console.log(data + '');
