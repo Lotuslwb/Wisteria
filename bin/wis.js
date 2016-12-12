@@ -6,9 +6,9 @@ var packageInfo = require('../package.json');
 var log = require('../utils/info');
 
 //commander
-program
-    .version(packageInfo.version)
-    .option('-l, --list', '查看支持的checklist')
+program.version(packageInfo.version);
+
+// .option('-l, --list', '查看支持的checklist')
 
 program.command('pack <productName> <password>')
     .description('打包一下')
